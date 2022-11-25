@@ -1,0 +1,7 @@
+name: Pokemon
+version: '${project.version}'
+main: dtnl.pokemon.Main
+api-version: 1.19
+commands:
+  getpokeball:
+  testcalc:
