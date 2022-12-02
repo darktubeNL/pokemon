@@ -10,7 +10,10 @@ import java.util.UUID;
 
 public class DataManager {
     public static YamlFile getpokemonfile(Player player, String id){
-        return new YamlFile(Bukkit.getServer().getPluginManager().getPlugin("Pokemon").getDataFolder() +"/"+player.getUniqueId()+"/"+id+".yml");
+        return new YamlFile(Bukkit.getServer().getPluginManager().getPlugin("Pokemon").getDataFolder() +"/Playerdata/"+player.getUniqueId()+"/"+id+".yml");
+    }
+    public static YamlFile getbasefile(String id){
+        return new YamlFile(Bukkit.getServer().getPluginManager().getPlugin("Pokemon").getDataFolder() +"/Pokemondata/"+id+".yml");
     }
     public static void Addpokemon(Player player, int pokemon_id,int level, int HP_IV, int Attack_IV, int Defense_IV, int Special_IV,int Speed_IV){
         YamlFile yml = getpokemonfile(player, UUID.randomUUID().toString());
@@ -37,7 +40,7 @@ public class DataManager {
     }
 
     public static ArrayList<String> getpokemons(Player player){
-        String path = Bukkit.getServer().getPluginManager().getPlugin("Pokemon").getDataFolder() + "/" + player.getUniqueId() + "/";
+        String path = Bukkit.getServer().getPluginManager().getPlugin("Pokemon").getDataFolder() + "/Playerdata/" + player.getUniqueId() + "/";
         File dir = new File(path);
         File[] directoryListing = dir.listFiles();
         if (directoryListing != null) {
@@ -52,6 +55,21 @@ public class DataManager {
 
     public static Object getvalue(Player player, String uuid, String setting){
         YamlFile yml = getpokemonfile(player, uuid);
+        try {
+            if (!yml.exists()) {
+                return false;
+            }else {
+                yml.load();
+                if(yml.isSet(setting)) {
+                    return yml.get(setting);
+                }
+            }
+        } catch (Exception ignored) {}
+        return false;
+    }
+
+    public static Object getbasevalue(int id, String setting){
+        YamlFile yml = getbasefile(String.valueOf(id));
         try {
             if (!yml.exists()) {
                 return false;

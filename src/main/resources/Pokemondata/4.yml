@@ -1,0 +1,13 @@
+Pokemon:
+  Name: "Charmander"
+  Model_ID: 4
+  Catch_rate: 45
+  type_1: "Fire"
+  type_2: null
+  Base_stats:
+    HP: 39
+    Attack: 52
+    Defence: 43
+    Sp_Attack: 60
+    Sp_Defence: 50
+    Speed: 65

@@ -1,0 +1,28 @@
+Pokemon:
+  Name: "bulbasaur"
+  Model_ID: 1
+  Catch_rate: 45
+  type_1: Grass
+  type_2: Poison
+  Base_stats:
+    HP: 45
+    Attack: 49
+    Defence: 49
+    Sp_Attack: 65
+    Sp_Defence: 65
+    Speed: 45
+  Moves:
+    - Tackle #levelup moves
+    - Growl
+    - Leech_Seed
+    - Vine_Whip
+    - PoisonPowder
+    - Sleep_Powder
+    - Take_Down
+    - Razor_Leaf
+    - Sweet_Scent
+    - Growth
+    - Double-Edge
+    - Worry_Seed
+    - Synthesis
+    - Seed_Bomb

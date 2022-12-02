@@ -1,0 +1,13 @@
+Pokemon:
+  Name: "Charmeleon"
+  Model_ID: 5
+  Catch_rate: 45
+  type_1: "Fire"
+  type_2: null
+  Base_stats:
+    HP: 58
+    Attack: 64
+    Defence: 58
+    Sp_Attack: 80
+    Sp_Defence: 65
+    Speed: 80

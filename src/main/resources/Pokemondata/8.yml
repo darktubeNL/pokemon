@@ -1,0 +1,13 @@
+Pokemon:
+  Name: "Squirtle"
+  Model_ID: 8
+  Catch_rate: 45
+  type_1: "Water"
+  type_2: null
+  Base_stats:
+    HP: 59
+    Attack: 63
+    Defence: 80
+    Sp_Attack: 65
+    Sp_Defence: 80
+    Speed: 58

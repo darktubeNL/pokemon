@@ -1,0 +1,13 @@
+Pokemon:
+  Name: "Charizard"
+  Model_ID: 6
+  Catch_rate: 45
+  type_1: "Fire"
+  type_2: "Flying"
+  Base_stats:
+    HP: 78
+    Attack: 84
+    Defence: 78
+    Sp_Attack: 109
+    Sp_Defence: 85
+    Speed: 100

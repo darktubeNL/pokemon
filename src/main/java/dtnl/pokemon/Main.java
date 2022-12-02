@@ -7,11 +7,18 @@ import dtnl.pokemon.events.InteractPokemonEvent;
 import dtnl.pokemon.events.PokeballthrowEvent;
 import dtnl.pokemon.events.PokemonTargetEvent;
 import dtnl.pokemon.manager.EntityLoop;
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Wolf;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.FileUtil;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -33,6 +40,7 @@ public final class Main extends JavaPlugin {
 
         getCommand("getpokeball").setExecutor((CommandExecutor) new GiveCMD());
         getCommand("testcalc").setExecutor((CommandExecutor) new testcalc());
+
     }
 
     @Override

@@ -1,0 +1,10 @@
+Attack:
+  Type: "Grass"
+  Category: "Special"
+  Power: 20
+  Accuracy: 100
+  PP: 25
+  special:
+    Own:
+      Function: "Absorb"
+      Change: 100

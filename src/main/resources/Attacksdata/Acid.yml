@@ -1,0 +1,11 @@
+Attack:
+  Type: "Poison"
+  Category: "Special"
+  Power: 40
+  Accuracy: 100
+  PP: 30
+  special:
+    Enemy:
+      Function: "Lower_Basestat"
+      target: "Sp_Defence"
+      Change: 10

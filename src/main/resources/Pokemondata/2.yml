@@ -1,0 +1,13 @@
+Pokemon:
+  Name: "ivysaur"
+  Model_ID: 2
+  Catch_rate: 45
+  type_1: "Grass"
+  type_2: "Poison"
+  Base_stats:
+    HP: 60
+    Attack: 62
+    Defence: 63
+    Sp_Attack: 80
+    Sp_Defence: 80
+    Speed: 60

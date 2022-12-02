@@ -1,0 +1,13 @@
+Pokemon:
+  Name: "venusaur"
+  Model_ID: 3
+  Catch_rate: 45
+  type_1: "Grass"
+  type_2: "Poison"
+  Base_stats:
+    HP: 80
+    Attack: 82
+    Defence: 83
+    Sp_Attack: 100
+    Sp_Defence: 100
+    Speed: 80
